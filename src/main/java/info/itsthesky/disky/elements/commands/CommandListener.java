@@ -3,6 +3,7 @@ package info.itsthesky.disky.elements.commands;
 import ch.njol.skript.lang.Expression;
 import ch.njol.skript.localization.Language;
 import info.itsthesky.disky.core.SkriptUtils;
+import info.itsthesky.disky.managers.ConfigManager;
 import net.dv8tion.jda.api.entities.Guild;
 import net.dv8tion.jda.api.entities.Message;
 import net.dv8tion.jda.api.entities.User;
@@ -82,6 +83,16 @@ public class CommandListener extends ListenerAdapter {
                             } catch (StringIndexOutOfBoundsException e1) {
                                 event.setArguments(null);
                             }
+
+                            if (!event.isFromGuild()) return;
+                            if (!((event).getGuild().getId().equals(ConfigManager.get("GuildID", null)))) {
+                                if (!(event.getCommand().getCategory().equals("global") || event.getCommand().getCategory().equals("global only"))) {
+                                    return;
+                                }
+                            } else if (event.getCommand().getCategory().equals("global only")) {
+                                return;
+                            }
+
                             // Because most of bukkit's apis are sync only, make sure to run this on bukkit's thread
                             SkriptUtils.sync(() -> {
 
