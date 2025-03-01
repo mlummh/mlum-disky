@@ -3,9 +3,9 @@ package net.itsthesky.disky.elements.properties.messages;
 import ch.njol.skript.doc.Description;
 import ch.njol.skript.doc.Examples;
 import ch.njol.skript.doc.Name;
+import net.itsthesky.disky.api.skript.MultiplyPropertyExpression;
 import net.dv8tion.jda.api.entities.Message;
 import net.dv8tion.jda.api.entities.Role;
-import net.itsthesky.disky.api.skript.MultiplyPropertyExpression;
 import org.jetbrains.annotations.NotNull;
 
 @Name("Message Mentioned Roles")

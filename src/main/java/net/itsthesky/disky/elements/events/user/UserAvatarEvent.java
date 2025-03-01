@@ -1,10 +1,10 @@
 package net.itsthesky.disky.elements.events.user;
 
-import net.dv8tion.jda.api.entities.User;
-import net.dv8tion.jda.api.events.user.update.UserUpdateAvatarEvent;
 import net.itsthesky.disky.api.events.DiSkyEvent;
 import net.itsthesky.disky.api.events.SimpleDiSkyEvent;
 import net.itsthesky.disky.core.SkriptUtils;
+import net.dv8tion.jda.api.entities.User;
+import net.dv8tion.jda.api.events.user.update.UserUpdateAvatarEvent;
 
 public class UserAvatarEvent extends DiSkyEvent<UserUpdateAvatarEvent> {
 

@@ -2,6 +2,10 @@ package net.itsthesky.disky.elements.events.messages;
 
 import ch.njol.skript.lang.Literal;
 import ch.njol.skript.lang.SkriptParser;
+import net.itsthesky.disky.api.events.DiSkyEvent;
+import net.itsthesky.disky.api.events.SimpleDiSkyEvent;
+import net.itsthesky.disky.core.SkriptUtils;
+import net.itsthesky.disky.managers.ConfigManager;
 import net.dv8tion.jda.api.entities.Guild;
 import net.dv8tion.jda.api.entities.Member;
 import net.dv8tion.jda.api.entities.Message;
@@ -14,10 +18,6 @@ import net.dv8tion.jda.api.entities.channel.concrete.ThreadChannel;
 import net.dv8tion.jda.api.entities.channel.middleman.GuildChannel;
 import net.dv8tion.jda.api.entities.channel.middleman.MessageChannel;
 import net.dv8tion.jda.api.events.message.MessageReceivedEvent;
-import net.itsthesky.disky.api.events.DiSkyEvent;
-import net.itsthesky.disky.api.events.SimpleDiSkyEvent;
-import net.itsthesky.disky.core.SkriptUtils;
-import net.itsthesky.disky.managers.ConfigManager;
 import org.bukkit.event.Event;
 import org.jetbrains.annotations.NotNull;
 

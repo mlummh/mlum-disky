@@ -1,12 +1,12 @@
 package net.itsthesky.disky.elements.events.user;
 
+import net.itsthesky.disky.api.events.DiSkyEvent;
+import net.itsthesky.disky.api.events.SimpleDiSkyEvent;
+import net.itsthesky.disky.core.SkriptUtils;
 import net.dv8tion.jda.api.entities.Activity;
 import net.dv8tion.jda.api.entities.Guild;
 import net.dv8tion.jda.api.entities.Member;
 import net.dv8tion.jda.api.entities.User;
-import net.itsthesky.disky.api.events.DiSkyEvent;
-import net.itsthesky.disky.api.events.SimpleDiSkyEvent;
-import net.itsthesky.disky.core.SkriptUtils;
 
 public class UserActivityOrderEvent extends DiSkyEvent<net.dv8tion.jda.api.events.user.update.UserUpdateActivityOrderEvent> {
 

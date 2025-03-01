@@ -17,6 +17,7 @@ def patch = '0'
 def channel = ''
 def channelVersion = ''
 
+def archive = 'mlum-disky'
 version = major + '.' + minor + '.' + patch + (channel ? '-' + channel + channelVersion : '')
 
 repositories {
@@ -51,7 +52,7 @@ dependencies {
 shadowJar {
     minimize()
 
-    setArchiveFileName('mlum-DiSky ' + version + '.jar')
+    setArchiveFileName(archive + ' ' + version + '.jar')
 
     // We currently cannot relocate JDA, as its default package is
     // used over modules and more. However, as DiSky should be the only
@@ -64,7 +65,7 @@ shadowJar {
 
 task removeClassPath {
     doLast {
-        def jarFile = file("${buildDir}/libs/DiSky ${version}.jar")
+        def jarFile = file("${buildDir}/libs/${archive} ${version}.jar")
 
         // Créer un jar temporaire
         def tempJar = new File(temporaryDir, "temp.jar")

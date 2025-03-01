@@ -7,11 +7,11 @@ import ch.njol.skript.doc.Name;
 import ch.njol.skript.lang.Expression;
 import ch.njol.skript.lang.SkriptParser.ParseResult;
 import ch.njol.util.Kleenean;
+import net.itsthesky.disky.api.skript.EasyElement;
+import net.itsthesky.disky.api.skript.MultiplyPropertyExpression;
 import net.dv8tion.jda.api.EmbedBuilder;
 import net.dv8tion.jda.api.entities.MessageEmbed;
 import net.dv8tion.jda.api.utils.messages.MessageCreateBuilder;
-import net.itsthesky.disky.api.skript.EasyElement;
-import net.itsthesky.disky.api.skript.MultiplyPropertyExpression;
 import org.bukkit.event.Event;
 import org.jetbrains.annotations.NotNull;
 

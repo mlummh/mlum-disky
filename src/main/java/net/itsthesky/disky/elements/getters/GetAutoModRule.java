@@ -7,11 +7,11 @@ import ch.njol.skript.lang.ExpressionType;
 import ch.njol.skript.lang.SkriptParser;
 import ch.njol.skript.lang.util.SimpleExpression;
 import ch.njol.util.Kleenean;
-import net.dv8tion.jda.api.entities.Guild;
-import net.dv8tion.jda.api.entities.automod.AutoModRule;
 import net.itsthesky.disky.DiSky;
 import net.itsthesky.disky.elements.changers.IAsyncGettableExpression;
 import net.itsthesky.disky.elements.sections.handler.DiSkyRuntimeHandler;
+import net.dv8tion.jda.api.entities.Guild;
+import net.dv8tion.jda.api.entities.automod.AutoModRule;
 import org.bukkit.event.Event;
 import org.jetbrains.annotations.Nullable;
 

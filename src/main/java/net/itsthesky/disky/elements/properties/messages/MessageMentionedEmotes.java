@@ -3,9 +3,9 @@ package net.itsthesky.disky.elements.properties.messages;
 import ch.njol.skript.doc.Description;
 import ch.njol.skript.doc.Examples;
 import ch.njol.skript.doc.Name;
-import net.dv8tion.jda.api.entities.Message;
 import net.itsthesky.disky.api.emojis.Emote;
 import net.itsthesky.disky.api.skript.MultiplyPropertyExpression;
+import net.dv8tion.jda.api.entities.Message;
 import org.jetbrains.annotations.NotNull;
 
 @Name("Message Emotes")

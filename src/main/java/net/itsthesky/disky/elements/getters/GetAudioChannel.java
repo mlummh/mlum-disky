@@ -4,8 +4,8 @@ import ch.njol.skript.doc.Description;
 import ch.njol.skript.doc.Examples;
 import ch.njol.skript.doc.Name;
 import ch.njol.skript.doc.Since;
-import net.dv8tion.jda.api.entities.channel.middleman.AudioChannel;
 import net.itsthesky.disky.core.Bot;
+import net.dv8tion.jda.api.entities.channel.middleman.AudioChannel;
 import org.jetbrains.annotations.NotNull;
 
 @Name("Get Audio Channel")

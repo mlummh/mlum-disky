@@ -1,13 +1,13 @@
 package net.itsthesky.disky.managers;
 
+import net.itsthesky.disky.DiSky;
+import net.itsthesky.disky.core.Bot;
+import net.itsthesky.disky.managers.wrappers.MessageWrapper;
 import net.dv8tion.jda.api.JDA;
 import net.dv8tion.jda.api.entities.Message;
 import net.dv8tion.jda.api.events.message.MessageReceivedEvent;
 import net.dv8tion.jda.api.events.message.MessageUpdateEvent;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
-import net.itsthesky.disky.DiSky;
-import net.itsthesky.disky.core.Bot;
-import net.itsthesky.disky.managers.wrappers.MessageWrapper;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
