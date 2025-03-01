@@ -70,6 +70,8 @@ public class PostMessage extends AsyncEffect {
 		Channel channel = parseSingle(exprChannel, e);
 		final @Nullable Message reference = parseSingle(exprReference, e);
 		final Bot bot = Bot.fromContext(exprBot, e);
+
+		//TODO check bot status is CONNECTED before doing this
 		if (message == null || channel == null)
 			return;
 
